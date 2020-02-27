@@ -7,24 +7,39 @@ def doc_ids():
         doc_id_file = open("doc_ids.txt", "w")
     except IOError:
         print("File Error occurred!")
-        return
-
+        return -1 #return -1 if error occurs
     path = 'alldocs/'
     files = []
     ids = 100
-    # r=root, d=directories, f = files
-    for r, d, f in os.walk(path):
+
+    for r, d, f in os.walk(path): # r=root, d=directories, f = files
         for file in f:
             files.append(os.path.join(r, file))
             document = str(ids) + '\t' + str(file) + '\n'
             ids = ids + 1
             doc_id_file.write(document)
 
-    # for f in files:
-    #     print(f)
-
-    # print(str(len(files)))
+    return files
 
 
 
-doc_ids()
+def term_ids(files_path):
+    try:
+        term_id_file = open("term_ids.txt", "w")
+    except IOError:
+        print("File Error occurred!")
+        return -1  #return -1 if error occurs
+    path = 'alldocs/'
+    ids = 100 #ids start from 100
+
+    for r, d, f in os.walk(path): # r=root, d=directories, f = files
+        for file in f:
+            term_with_id = str(ids) + '\t' + str(file) + '\n'
+            ids = ids + 1
+            term_id_file.write(term_with_id)
+
+
+files_path = doc_ids() # file mapping a document's filename (without path) to a unique integer
+
+if(files_path is not -1):
+    term_ids(files_path)
