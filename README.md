@@ -15,7 +15,7 @@ Accept a directory name as a command line argument, and process all files found 
 intelligent decision as to how many stop words you should remove).
 􏰤Apply stemming to the document using any standard algorithm 􏰧 Porter, Snowball, and
 KStem stemmers are appropriate.
-# 􏰤Tokenizer will write two files:
+􏰤Tokenizer will write two files:
 1 - docids.txt 􏰧 A file mapping a document's filename to a unique integer, its DOCID. Each line is formatted with a DOCID and filename separated by a tab, as follows:
 1234\t324352 
 2 - term_ids.txt 􏰧 A file mapping a token found during tokenization to a unique integer, its TERMID. Each line is formatted with a TERMID and token separated by a tab, as follows:
