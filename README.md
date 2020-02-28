@@ -3,7 +3,7 @@ Inverted Index of english language files
 
 This INVERTED INDEXcode is divided in three tasks and each task is expalained.
 
-Task 1: Tokenizing Documents
+# Task 1: Tokenizing Documents
 
 The first step in creating an index is tokenization. Document is converted into a stream of tokens suitable for indexing.
 Tokenizer follow these steps:
