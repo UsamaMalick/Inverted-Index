@@ -1,4 +1,8 @@
-import os
+import os , re , string
+# Load library
+
+from nltk.corpus import stopwords
+
 
 def doc_ids():
     try:
@@ -33,8 +37,14 @@ def term_ids(files_path):
     for path in files_path:
         print (path)
         file = open(path , "r")
-        for word in file.read().split():
-            print(word.lower())
+        content = file.read().lower() #converting to lower case
+        content = re.sub(r'\w*\d\w*', '', content) #removing numeric entries
+        content = content.translate(str.maketrans('','', string.punctuation))
+        # print(content)
+
+        # for word in content:
+        #     print(word.lower())
+
         break
 
 
@@ -49,3 +59,7 @@ files_path = doc_ids() # file mapping a document's filename (without path) to a 
 
 if(files_path is not -1):
     term_ids(files_path)
+
+#
+stop_words = stopwords.words('english')
+print(stop_words)
