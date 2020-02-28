@@ -18,8 +18,8 @@ Accept a directory name as a command line argument, and process all files found 
 
 􏰤Apply stemming to the document using any standard algorithm 􏰧 Porter, Snowball, and KStem stemmers are appropriate.
 
-### 􏰤Tokenizer will write two files:
-##### 1 - docids.txt 􏰧 
+#### 􏰤Tokenizer will write two files:
+##### 1 - doc_ids.txt 􏰧 
 A file mapping a document's filename to a unique integer, its DOCID. Each line is formatted with a DOCID and filename separated by a tab, as follows:
 1234\t324352 
 
