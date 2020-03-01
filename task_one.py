@@ -9,7 +9,7 @@ def doc_ids():
         doc_id_file = open("doc_ids.txt", "w")
     except IOError:
         print("File Error occurred!")
-        return -1 #return -1 if error occurs
+        return -1 # return -1 if error occurs
     path = 'alldocs/'
     files = []
     ids = 100
@@ -32,23 +32,23 @@ def term_ids(files_path):
         term_id_file = open("term_ids.txt", "w")
     except IOError:
         print("File Error occurred!")
-        return -1  #return -1 if error occurs
-    ids = 100 #ids start from 100
+        return -1  # return -1 if error occurs
+    ids = 100 # ids start from 100
 
     dict_terms = []
     for path in files_path:
         print (path)
         file = open(path , "r")
-        content = file.read().lower() #converting to lower case
-        content = re.sub(r'\w*\d\w*', '', content) #removing numeric entries
-        content = content.translate(str.maketrans('','', string.punctuation)) #removing punctuation and symbols
-        stop_words = stopwords.words('english') #loading stopwords from nltk
+        content = file.read().lower() # converting to lower case
+        content = re.sub(r'\w*\d\w*', '', content) # removing numeric entries
+        content = content.translate(str.maketrans('','', string.punctuation)) # removing punctuation and symbols
+        stop_words = stopwords.words('english') # loading stopwords from nltk
         content = content.split()
-        words = [word for word in content if word not in stop_words] #removing stop words
-        terms = list(dict.fromkeys(words)) #remmoving duplicates
+        words = [word for word in content if word not in stop_words] # removing stop words
+        terms = list(dict.fromkeys(words)) # removing duplicates
         ps = PorterStemmer()
-        terms = [ps.stem(word) for word in terms] #stemming words
-        terms = list(dict.fromkeys(terms)) #removing duplicate words
+        terms = [ps.stem(word) for word in terms] # stemming words
+        terms = list(dict.fromkeys(terms)) # removing duplicate words
         dict_terms = list(set(dict_terms) | set(terms))
 
     for final_term in dict_terms:
