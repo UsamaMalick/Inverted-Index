@@ -27,6 +27,7 @@ def doc_ids():
 
 
 def term_ids(files_path):
+    print("Terms Ids!")
     try:
         term_id_file = open("term_ids.txt", "w")
     except IOError:
@@ -64,5 +65,3 @@ files_path = doc_ids() # file mapping a document's filename (without path) to a 
 dictionary = 0
 if(files_path is not -1):
     dictionary = term_ids(files_path)
-
-print(len(dictionary))
