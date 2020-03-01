@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d07f1ef-6d0c-4573-9d3e-4105bd31e9b4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/inverted_index.py" beforeDir="false" afterPath="$PROJECT_DIR$/inverted_index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_one.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_one.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index_reading.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/term_index.txt" beforeDir="false" afterPath="$PROJECT_DIR$/term_index.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,14 +27,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inverted_index.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="inverted_index.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inverted_index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="100" column="10" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
+            <state relative-caret-position="381">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="e#1#24#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_reading.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index_reading.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="term_index.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/term_index.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -72,6 +91,8 @@
         <option value="$PROJECT_DIR$/temp.py" />
         <option value="$PROJECT_DIR$/task_one.py" />
         <option value="$PROJECT_DIR$/inverted_index.py" />
+        <option value="$PROJECT_DIR$/term_index.txt" />
+        <option value="$PROJECT_DIR$/index_reading.py" />
       </list>
     </option>
   </component>
@@ -114,7 +135,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.temp">
+  <component name="RunManager" selected="Python.index_reading">
+    <configuration name="index_reading" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Inverted-Index" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/index_reading.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="inverted_index" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Inverted-Index" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,9 +212,11 @@
       <item itemvalue="Python.main" />
       <item itemvalue="Python.inverted_index" />
       <item itemvalue="Python.temp" />
+      <item itemvalue="Python.index_reading" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.index_reading" />
         <item itemvalue="Python.temp" />
         <item itemvalue="Python.inverted_index" />
         <item itemvalue="Python.main" />
@@ -189,10 +230,10 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15010571" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15010571" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32983682" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32983682" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32983682" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32983682" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -270,16 +311,6 @@
     <entry file="file://$PROJECT_DIR$/term_ids.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/term_index.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/task_one.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="805">
@@ -290,13 +321,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/inverted_index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="100" column="10" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
+        <state relative-caret-position="381">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="e#1#24#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/term_index.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index_reading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
         </state>
       </provider>
     </entry>
