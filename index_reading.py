@@ -1,6 +1,4 @@
 
-
-
 path = "term_index.txt"
 file = None
 try:

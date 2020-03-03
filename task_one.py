@@ -61,7 +61,7 @@ def term_ids(files_path):
 
 
 files_path = doc_ids() # file mapping a document's filename (without path) to a unique integer
-
+print(files_path)
 dictionary = 0
 if(files_path is not -1):
     dictionary = term_ids(files_path)
